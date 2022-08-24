@@ -1,0 +1,118 @@
+
+
+
+{% load static %}
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</head>
+<body class="sss" style="background-image:url({% static 'hm/images/demo/backgrounds/bg.jpg' %});">
+
+<!-- Section: Design Block -->
+<section class="text-center text-lg-start">
+  <style>
+    .cascading-right {
+      margin-right: -50px;
+    }
+
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+    }
+  </style>
+
+  <!-- Jumbotron -->
+  <div class="container py-4">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+            <a href ="/">home</a>
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5">Sign up now</h2>
+            <form action="" method="post">
+                {% csrf_token %}
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-12 mb-4">
+                  <div class="form-outline">
+                    <div class="input-box">
+                      <input type="text" name="username" placeholder="Enter a username" required>
+                    </div>
+                    <label class="form-label" >Username</label>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                  <div class="input-box">
+                    <input type="email" name="email" placeholder="Enter a username" required>
+                  </div>
+                <label class="form-label" >Email   </label>
+
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                      <div class="input-box">
+                       <input type="password" name="password1" placeholder="Enter a username" required>
+                      </div>
+                      <label class="form-label" >Password</label>
+              </div>
+                <div class="form-outline mb-4">
+                        <div class="input-box">
+                          <input type="password" name="password2" placeholder="Enter a username" required>
+                       </div>
+
+                 <label class="form-label" >repeat-Password</label>
+               </div>
+
+
+              <!-- Checkbox -->
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-4">
+                Sign up
+              </button>
+              <div class="text">
+               <h6>already have an account? <a href="{% url 'login' %}">login Now</a></h6>
+              </div>
+
+
+              <!-- Register buttons -->
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+<!--      <div class="col-lg-6 mb-5 mb-lg-0">-->
+<!--        <img src="https://unsplash.com/photos/74HGrqRby2Q" class="w-100 rounded-4 shadow-4"-->
+<!--          alt="" />-->
+<!--      </div>-->
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->
+
+</body>
+</html>
+
+
+<!--<form method="post" action="">-->
+<!--    {% csrf_token %}-->
+<!--    {{form.as_p}}-->
+<!--    <input type="submit" name="submit" value="submit">-->
+<!--</form>-->
+
+
+
+
+
