@@ -1,4 +1,9 @@
 # food_space
+
+E-commerce website: E-commerce website for food items.
+Implemented all necessary e-commerce functionalities like 
+product listing, cart .
+
 ![food_website](https://user-images.githubusercontent.com/108901697/186425613-930cba41-6237-47b1-8bbb-d338cf633a21.jpg)
 
 ![Screenshot (130)](https://user-images.githubusercontent.com/108901697/205269765-e7eaaab0-ed41-4666-9c3c-80c748a9ead3.png)
