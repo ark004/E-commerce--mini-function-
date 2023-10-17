@@ -18,10 +18,6 @@ pip install django
 
 virtualenv
 
-# Mac/Linux
-
-source env/bin/activate
-
 # For windows
 
 $ workon env
